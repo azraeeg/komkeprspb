@@ -129,12 +129,12 @@ class PermissionSeeder extends Seeder
             $adminUser->assignRole('admin');
         }
 
-        $karuUsers = User::whereIn('id', [])->get();
+        $karuUsers = User::whereIn('id', [365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378])->get();
         foreach ($karuUsers as $karuUser) {
             $karuUser->assignRole('karu');
         }
 
-        $hrdUsers = User::whereIn('id', [])->get();
+        $hrdUsers = User::whereIn('id', [379])->get();
         foreach ($hrdUsers as $hrdUser) {
             $hrdUser->assignRole('hrd');
         }
