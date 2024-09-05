@@ -8,7 +8,7 @@
             </div>
             <div class="card-body">
                 <h5> Kewenangan klinik diberikan kepada {{ $nama }} sesuai jenjang karir, telah dilakukan kredensial terhadap kewenangan klinis
-                    untuk memperoleh penugasan klinik. Penugasan klinik yang diberikan dalam rangka memberikan asuhan di RS PERMATA MEDIKA 
+                    untuk memperoleh penugasan klinik. Penugasan klinik yang diberikan dalam rangka memberikan asuhan di RS PERMATA BUNDA 
                     untuk memenuhi kebutuhan dasar pasien dan keluarga. 
                     Proses kredensial dilakukan oleh: {{ $nama }} dan dinilai oleh: {{ $penilai }} yang menjabat sebagai: {{ $jabatan }}
                 </h5>
