@@ -56,7 +56,7 @@
                     <input type="date" class="form-control" name="TglBerakhir" value="{{ $spkData->TglBerakhir }}" required>
                 </div>
                 <div class="form-group">
-                    <label for="File">File SPK</label>
+                    <label for="File">File SPK / RKK</label>
                     <div class="input-group">
                         <div class="custom-file">
                             <input type="file" class="custom-file-input" name="FileSPK" id="FileSPK" accept=".pdf" onchange="displayFileName('FileSPK')">
@@ -64,7 +64,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <label for="File">File RKK</label>
                     <div class="input-group">
                         <div class="custom-file">
@@ -72,7 +72,7 @@
                             <label for="FileRKK" class="custom-file-label" id="fileLabelRKK">{{ $spkData->FileRKK }}</label>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <!-- /.card-body -->
 

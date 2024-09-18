@@ -27,7 +27,7 @@
                     <th>Pendidikan</th>
                     <th>Tanggal Berakhir</th>
                     <th>File SPK</th>
-                    <th>File RKK</th>
+                    <!-- <th>File RKK</th> -->
                     @can('view_hrd')
                     <th>Aksi</th>
                     @endcan
@@ -76,7 +76,7 @@
                             File Not Available
                         @endif
                     </td>
-                    <td>
+                    <!-- <td>
                         @if ($data->FileRKK)
                             @if (pathinfo($data->FileRKK, PATHINFO_EXTENSION) == 'pdf')
                                 <a href="{{ asset('storage/uploads/' . $data->FileRKK) }}" target="_blank">View PDF</a>
@@ -86,7 +86,7 @@
                         @else
                             File Not Available
                         @endif
-                    </td>
+                    </td> -->
                     @can('view_hrd')
                     <td>
                         <a href="{{ route('admin.spk.edit', ['id' => $data->id]) }}" class="btn btn-warning">Edit</a>

@@ -31,7 +31,7 @@ class SpkController extends Controller
             'Pendidikan' => 'required',
             'TglBerakhir' => 'required|date',
             'FileSPK' => 'required|file|mimes:pdf|max:10000',
-            'FileRKK' => 'required|file|mimes:pdf|max:10000',
+            // 'FileRKK' => 'required|file|mimes:pdf|max:10000',
         ], [
             'Nopeg.unique' => 'Gagal input, Nopeg sudah terdaftar.',
         ]);
@@ -42,9 +42,9 @@ class SpkController extends Controller
         $fileSPK->storeAs('public/uploads', $fileNameSPK);
     
         // Handle file upload for RKK
-        $fileRKK = $request->file('FileRKK');
-        $fileNameRKK = time() . '_RKK_' . $fileRKK->getClientOriginalName();
-        $fileRKK->storeAs('public/uploads', $fileNameRKK);
+        // $fileRKK = $request->file('FileRKK');
+        // $fileNameRKK = time() . '_RKK_' . $fileRKK->getClientOriginalName();
+        // $fileRKK->storeAs('public/uploads', $fileNameRKK);
     
         // Store data in the database (spk table)
         DB::table('spk')->insert([
@@ -56,7 +56,7 @@ class SpkController extends Controller
             'Pendidikan' => $request->input('Pendidikan'),
             'TglBerakhir' => $request->input('TglBerakhir'),
             'FileSPK' => $fileNameSPK,
-            'FileRKK' => $fileNameRKK,
+            // 'FileRKK' => $fileNameRKK,
         ]);
     
         return redirect()->route('admin.spk.index')->with('success', 'Data berhasil disimpan.');
@@ -102,7 +102,7 @@ class SpkController extends Controller
             'Pendidikan' => 'required',
             'TglBerakhir' => 'required|date',
             'FileSPK' => 'file|mimes:pdf|max:10000',
-            'FileRKK' => 'file|mimes:pdf|max:10000', // Sesuaikan dengan kebutuhan
+            // 'FileRKK' => 'file|mimes:pdf|max:10000', // Sesuaikan dengan kebutuhan
         ]);
 
         
@@ -154,7 +154,7 @@ class SpkController extends Controller
             'Pendidikan' => $request->Pendidikan,
             'TglBerakhir' => $request->TglBerakhir,
             'FileSPK' => $fileName,
-            'FileRKK' => $fileRKKName,
+            // 'FileRKK' => $fileRKKName,
         ]);
         
 

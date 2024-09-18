@@ -57,7 +57,7 @@
                             <input type="date" class="form-control" name="TglBerakhir" required>
                         </div>
                         <div class="form-group">
-                            <label for="FileSPK">File SPK</label>
+                            <label for="FileSPK">File SPK / RKK</label>
                             <div class="input-group">
                                 <div class="custom-file">
                                     <input type="file" class="custom-file-input" name="FileSPK" id="FileSPK" accept=".pdf" required onchange="displayFileName('FileSPK')">
@@ -66,7 +66,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <label for="FileRKK">File RKK</label>
                             <div class="input-group">
                                 <div class="custom-file">
@@ -74,7 +74,7 @@
                                     <label class="custom-file-label" id="fileLabelRKK">Choose file</label>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                     </div>
                     <!-- /.card-body -->
